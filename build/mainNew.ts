@@ -11,6 +11,8 @@ function main() {
   // empty out dist directory
   fs.rmSync(DIST_BASE_DIR, { recursive: true, force: true });
   fs.mkdirSync(DIST_BASE_DIR, { recursive: true });
+  // create .nojekyll file to prevent Jekyll processing on GitHub Pages
+  fs.writeFileSync(`${DIST_BASE_DIR}/.nojekyll`, "");
   console.log("# loading contents");
   // load contents, parse markdown in linear presentations
   // takes ~ 3 seconds
