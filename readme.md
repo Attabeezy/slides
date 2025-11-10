@@ -2,7 +2,7 @@
 
 This is a collection of slides for programming courses, created from markdown sources.
 
-See <http://marko-knoebl.github.io/slides> for the slides.
+See <http://attabeezy.github.io/slides> for the slides.
 
 The presentations are standalone HTML files that can be downloaded and viewed offline.
 
