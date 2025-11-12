@@ -1,6 +1,8 @@
 {
   "type": "topic",
-  "languages": ["de", "en"],
+  "languages": [
+    "en"
+  ],
   "titles": {
     "en": "Python Advanced",
     "de": "Python Fortgeschritten"

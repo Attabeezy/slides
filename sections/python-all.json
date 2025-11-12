@@ -10,13 +10,11 @@
     "./python-in-practice/index-topic.json",
     "./python-advanced/index-topic.json"
   ],
-  "languages": ["en", "de"],
+  "languages": ["en"],
   "pageUrls": {
-    "en": "./python-all-page-en.md",
-    "de": "./python-all-page-de.md"
+    "en": "./python-all-page-en.md"
   },
   "topicPageUrls": {
-    "en": "./python-all-topics-en.md",
-    "de": "./python-all-topics-de.md"
+    "en": "./python-all-topics-en.md"
   }
 }
