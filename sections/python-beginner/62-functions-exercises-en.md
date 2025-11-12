@@ -12,4 +12,4 @@
 
 For bar codes / primes: look up the % operator
 
-see <https://github.com/marko-knoebl/slides/tree/master/exercises/python-beginner>
+see <https://github.com/Attabeezy/slides/tree/master/exercises/python-beginner>

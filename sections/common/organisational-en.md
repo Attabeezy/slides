@@ -1,6 +1,6 @@
 ## Slides
 
-https://marko-knoebl.github.io/slides/
+https://attabeezy.github.io/slides/
 
 ## Your Trainer
 
