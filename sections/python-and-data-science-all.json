@@ -14,13 +14,11 @@
     "./python-data-science-6-neural-networks-with-keras/index-topic.json",
     "./python-data-science-7-data-exploration-and-unsupervised-learning/index-topic.json"
   ],
-  "languages": ["en", "de"],
+  "languages": ["en"],
   "pageUrls": {
-    "en": "./python-and-data-science-all-page-en.md",
-    "de": "./python-and-data-science-all-page-de.md"
+    "en": "./python-and-data-science-all-page-en.md"
   },
   "topicPageUrls": {
-    "en": "./python-and-data-science-all-topics-en.md",
-    "de": "./python-and-data-science-all-topics-de.md"
+    "en": "./python-and-data-science-all-topics-en.md"
   }
 }

@@ -1,8 +1,10 @@
 {
   "type": "topic",
-  "languages": ["de", "en"],
+  "languages": [
+    "en"
+  ],
   "titles": {
     "en": "Python and Data Science: Overview",
-    "de": "Python und Data Science: Überblick"
+    "de": "Python und Data Science: \u00dcberblick"
   }
 }

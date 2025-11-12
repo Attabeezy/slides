@@ -8,9 +8,8 @@
     "./python-all.json",
     "./python-and-data-science-all.json"
   ],
-  "languages": ["en", "de"],
+  "languages": ["en"],
   "pageUrls": {
-    "en": "./index-page-en.md",
-    "de": "./index-page-de.md"
+    "en": "./index-page-en.md"
   }
 }
