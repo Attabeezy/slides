@@ -1,8 +1,0 @@
-{
-  "type": "topic",
-  "titles": {
-    "en": "GraphQL Client",
-    "de": "GraphQL Client"
-  },
-  "languages": ["en", "de"]
-}

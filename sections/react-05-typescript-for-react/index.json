@@ -1,8 +1,0 @@
-{
-  "type": "topic",
-  "languages": ["en", "de"],
-  "titles": {
-    "en": "TypeScript for React",
-    "de": "TypeScript für React"
-  }
-}
