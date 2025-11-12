@@ -18,6 +18,22 @@ This process starts with _sections/index.json_ and recursively includes material
 
 It creates output in the _docs_ folder
 
+## Hosting on GitHub Pages
+
+This repository is configured to automatically build and deploy to GitHub Pages. When you push to the `master` branch, a GitHub Actions workflow will:
+
+1. Build the slides using `npm run build`
+2. Deploy the contents of the `docs` folder to GitHub Pages
+
+To enable GitHub Pages for your fork:
+
+1. Go to your repository's Settings → Pages
+2. Under "Source", select "GitHub Actions"
+3. Push changes to the `master` branch to trigger a deployment
+4. Your slides will be available at `https://<username>.github.io/<repository-name>/`
+
+The workflow can also be triggered manually from the Actions tab.
+
 ## Technical details, writing your own
 
 The slides in this repository are created from markdown sources via [rehype-slides](https://github.com/marko-knoebl/rehype-slides)
