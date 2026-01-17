@@ -1,0 +1,23 @@
+{
+  "type": "collection",
+  "titles": {
+    "en": "8 Days of Python"
+  },
+  "childUrls": [
+    "./01-day1-foundations/index-topic.json",
+    "./02-day2-operators-strings/index-topic.json",
+    "./03-day3-lists-tuples/index-topic.json",
+    "./04-day4-dicts-sets/index-topic.json",
+    "./05-day5-control-functions/index-topic.json",
+    "./06-day6-modules-advanced/index-topic.json",
+    "./07-day7-errors-files/index-topic.json",
+    "./08-day8-oop-next-steps/index-topic.json"
+  ],
+  "languages": ["en"],
+  "pageUrls": {
+    "en": "./python-8day-course-page-en.md"
+  },
+  "topicPageUrls": {
+    "en": "./python-8day-course-topics-en.md"
+  }
+}
