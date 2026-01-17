@@ -162,12 +162,12 @@ class Collection {
     if (this.checklistPageUrls) {
       for (let lang in this.checklistPageUrls) {
         const url = this.checklistPageUrls[lang];
-        this.checklistPages[lang] = fs.readFileSync(
-          `${this.srcBaseDir}/${url}`,
-          {
-            encoding: "utf-8",
-          }
+        const absChecklistPageUrl = upath.normalize(
+          `${this.srcBaseDir}/${path.dirname(this.relSrcUrl)}/${url}`
         );
+        this.checklistPages[lang] = fs.readFileSync(absChecklistPageUrl, {
+          encoding: "utf-8",
+        });
       }
     }
   }
