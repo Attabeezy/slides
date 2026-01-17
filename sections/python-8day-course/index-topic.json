@@ -15,9 +15,9 @@
   ],
   "languages": ["en"],
   "pageUrls": {
-    "en": "../python-8day-course-page-en.md"
+    "en": "./python-8day-course-page-en.md"
   },
   "topicPageUrls": {
-    "en": "../python-8day-course-topics-en.md"
+    "en": "./python-8day-course-topics-en.md"
   }
 }

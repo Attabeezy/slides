@@ -136,7 +136,10 @@ class Collection {
     if (this.pageUrls) {
       for (let lang in this.pageUrls) {
         const url = this.pageUrls[lang];
-        this.pages[lang] = fs.readFileSync(`${this.srcBaseDir}/${url}`, {
+        const absPageUrl = upath.normalize(
+          `${this.srcBaseDir}/${path.dirname(this.relSrcUrl)}/${url}`
+        );
+        this.pages[lang] = fs.readFileSync(absPageUrl, {
           encoding: "utf-8",
         });
       }
@@ -146,7 +149,10 @@ class Collection {
     if (this.topicPageUrls) {
       for (let lang in this.topicPageUrls) {
         const url = this.topicPageUrls[lang];
-        this.topicPages[lang] = fs.readFileSync(`${this.srcBaseDir}/${url}`, {
+        const absTopicPageUrl = upath.normalize(
+          `${this.srcBaseDir}/${path.dirname(this.relSrcUrl)}/${url}`
+        );
+        this.topicPages[lang] = fs.readFileSync(absTopicPageUrl, {
           encoding: "utf-8",
         });
       }
