@@ -31,6 +31,26 @@ function main() {
     `${DIST_BASE_DIR}/index-en.html`,
     `${DIST_BASE_DIR}/index.html`
   );
+  
+  // Create assets/css directory and style.scss for GitHub Pages Jekyll
+  const assetsCssDir = `${DIST_BASE_DIR}/assets/css`;
+  fs.mkdirSync(assetsCssDir, { recursive: true });
+  
+  // Jekyll requires front matter (---) for SCSS processing
+  const scssContent = [
+    "---",
+    "---",
+    "",
+    '@import "{{ site.theme }}";',
+    ""
+  ].join("\n");
+  fs.writeFileSync(`${assetsCssDir}/style.scss`, scssContent);
+  
+  // Create _config.yml for Jekyll configuration
+  const configContent = "theme: jekyll-theme-primer\n";
+  fs.writeFileSync(`${DIST_BASE_DIR}/_config.yml`, configContent);
+  
+  console.log("# created Jekyll configuration files");
 }
 
 main();
