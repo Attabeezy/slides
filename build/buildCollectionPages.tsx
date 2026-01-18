@@ -12,6 +12,20 @@ import {
   COLLECTION_TOPICS_POSTFIX,
 } from "./constants";
 
+/**
+ * Calculate relative path prefix based on actual directory depth
+ * Files are written as: distBaseDir/relId-postfix.html
+ * Where only the directory part of relId creates actual subdirectories
+ * e.g., "python-8day-course/01-day1" creates "python-8day-course/" directory
+ * and file "01-day1-collection-en.html" inside it
+ */
+function getRelativePathPrefix(relId: string): string {
+  const parts = relId.split("/");
+  // Only the parent directories matter (not the final part which becomes the filename)
+  const depth = parts.length > 1 ? parts.length - 1 : 0;
+  return depth > 0 ? "../".repeat(depth) : "";
+}
+
 function buildCollectionPages(collection: Collection | Topic) {
   for (let lang of collection.languages) {
     const nav = ReactDOMServer.renderToStaticMarkup(
@@ -72,17 +86,19 @@ function CollectionOverviewPage(props: {
   );
   const extraContentAbove = extraContentParts?.[0];
   const extraContentBelow = extraContentParts?.[1];
+  const pathPrefix = getRelativePathPrefix(props.collection.relId);
+
   return (
     <HtmlPage lang={props.lang}>
       <div style={{ padding: "1rem" }}>
         <nav>
-          <a href={`index-${props.lang}.html`}>Home</a>
+          <a href={`${pathPrefix}index-${props.lang}.html`}>Home</a>
           {props.collection.languages
             .filter((l) => l !== props.lang)
             .map((otherLang) => (
               <span key={otherLang}>
                 {" | "}
-                <a href={`index-${otherLang}.html`}>
+                <a href={`${pathPrefix}index-${otherLang}.html`}>
                   {otherLang === "de" ? "German version" : "English version"}
                 </a>
               </span>
@@ -92,7 +108,9 @@ function CollectionOverviewPage(props: {
         {props.collection.parent ? (
           <p>
             parent topic:{" "}
-            <a href={`${props.collection.parent.relId}-${props.lang}.html`}>
+            <a
+              href={`${pathPrefix}${props.collection.parent.relId}-${props.lang}.html`}
+            >
               {props.collection.parent.titles[props.lang]}
             </a>
           </p>
@@ -105,9 +123,9 @@ function CollectionOverviewPage(props: {
             }
             let url;
             if (child instanceof Collection) {
-              url = `${child.relId}-${props.lang}.html`;
+              url = `${pathPrefix}${child.relId}-${props.lang}.html`;
             } else {
-              url = `${child.relId}-${COLLECTION_POSTFIX}-${props.lang}.html`;
+              url = `${pathPrefix}${child.relId}-${COLLECTION_POSTFIX}-${props.lang}.html`;
             }
             return (
               <li key={child.relId}>
@@ -130,6 +148,7 @@ function CollectionPage(props: {
   collection: Collection | Topic;
   lang: string;
 }) {
+  const pathPrefix = getRelativePathPrefix(props.collection.relId);
   const script = `
     document
       .getElementById("nav-toggle-button")
@@ -162,24 +181,32 @@ function CollectionPage(props: {
           {props.collection instanceof Collection ? (
             <>
               <div>
-                <a href={`index-${props.lang}.html`}>Home</a>
+                <a href={`${pathPrefix}index-${props.lang}.html`}>Home</a>
               </div>
-              {getNavEntry(props.collection, props.lang)}
+              {getNavEntry(props.collection, props.lang, pathPrefix)}
             </>
           ) : (
             <>
               <div>
                 parent topic:{" "}
-                <a href={`${props.collection.parent.relId}-${props.lang}.html`}>
+                <a
+                  href={`${pathPrefix}${props.collection.parent.relId}-${props.lang}.html`}
+                >
                   {props.collection.parent.titles[props.lang]}
                 </a>
               </div>
               <div>
-                <a href={`${props.collection.relId}-${props.lang}.html`}>
+                <a
+                  href={`${pathPrefix}${props.collection.relId}-${props.lang}.html`}
+                >
                   show presentation individually
                 </a>
               </div>
-              {getNavEntryForTopicPage(props.collection, props.lang)}
+              {getNavEntryForTopicPage(
+                props.collection,
+                props.lang,
+                pathPrefix
+              )}
             </>
           )}
         </nav>
@@ -219,7 +246,11 @@ function CollectionPage(props: {
   );
 }
 
-function getNavEntryForTopicPage(element: Topic, lang: string) {
+function getNavEntryForTopicPage(
+  element: Topic,
+  lang: string,
+  pathPrefix: string
+) {
   return (
     <section key={element.relId}>
       <h1>{element.titles[lang]}</h1>
@@ -228,7 +259,7 @@ function getNavEntryForTopicPage(element: Topic, lang: string) {
           .filter((child) => child.language === lang)
           .map((child, index) => {
             const title = child.getTitle();
-            const url = `${element.relId}-${lang}.html#/${index}`;
+            const url = `${pathPrefix}${element.relId}-${lang}.html#/${index}`;
             return (
               <li key={child.relSrcUrl}>
                 <a href={url} target="content">
@@ -242,7 +273,11 @@ function getNavEntryForTopicPage(element: Topic, lang: string) {
   );
 }
 
-function getNavEntry(element: Collection | Topic, lang: string) {
+function getNavEntry(
+  element: Collection | Topic,
+  lang: string,
+  pathPrefix: string
+) {
   if (!element.languages.includes(lang)) {
     return null;
   } else if (element instanceof Collection) {
@@ -252,17 +287,19 @@ function getNavEntry(element: Collection | Topic, lang: string) {
           {element.titles[lang]}{" "}
           <small>
             (
-            <a href={`${element.relId}-${COLLECTION_POSTFIX}-${lang}.html`}>
+            <a
+              href={`${pathPrefix}${element.relId}-${COLLECTION_POSTFIX}-${lang}.html`}
+            >
               show individually
             </a>{" "}
             |{" "}
-            <a href={`${element.relId}-${lang}.html`}>
+            <a href={`${pathPrefix}${element.relId}-${lang}.html`}>
               show individual overview
             </a>
             )
           </small>
         </h1>
-        {element.children.map((child) => getNavEntry(child, lang))}
+        {element.children.map((child) => getNavEntry(child, lang, pathPrefix))}
       </section>
     );
   } else if (element instanceof Topic) {
@@ -272,7 +309,9 @@ function getNavEntry(element: Collection | Topic, lang: string) {
           {element.titles[lang]}{" "}
           <small>
             (
-            <a href={`${element.relId}-${COLLECTION_POSTFIX}-${lang}.html`}>
+            <a
+              href={`${pathPrefix}${element.relId}-${COLLECTION_POSTFIX}-${lang}.html`}
+            >
               show individually
             </a>
             )
@@ -283,7 +322,7 @@ function getNavEntry(element: Collection | Topic, lang: string) {
             .filter((child) => child.language === lang)
             .map((child, index) => {
               const title = child.getTitle();
-              const url = `${element.relId}-${lang}.html#/${index}`;
+              const url = `${pathPrefix}${element.relId}-${lang}.html#/${index}`;
               return (
                 <li key={child.relSrcUrl}>
                   <a href={url} target="content">
@@ -299,17 +338,18 @@ function getNavEntry(element: Collection | Topic, lang: string) {
 }
 
 function CollectionTopicsPage(props: { collection: Collection; lang: string }) {
+  const pathPrefix = getRelativePathPrefix(props.collection.relId);
   return (
     <HtmlPage lang={props.lang}>
       <div style={{ padding: "1rem" }}>
         <nav>
-          <a href={`index-${props.lang}.html`}>Home</a>
+          <a href={`${pathPrefix}index-${props.lang}.html`}>Home</a>
           {props.collection.languages
             .filter((l) => l !== props.lang)
             .map((otherLang) => (
               <span key={otherLang}>
                 {" | "}
-                <a href={`index-${otherLang}.html`}>
+                <a href={`${pathPrefix}index-${otherLang}.html`}>
                   {otherLang === "de" ? "German version" : "English version"}
                 </a>
               </span>
@@ -325,17 +365,18 @@ function CollectionChecklistPage(props: {
   collection: Collection;
   lang: string;
 }) {
+  const pathPrefix = getRelativePathPrefix(props.collection.relId);
   return (
     <HtmlPage lang={props.lang}>
       <div style={{ padding: "1rem" }}>
         <nav>
-          <a href={`index-${props.lang}.html`}>Home</a>
+          <a href={`${pathPrefix}index-${props.lang}.html`}>Home</a>
           {props.collection.languages
             .filter((l) => l !== props.lang)
             .map((otherLang) => (
               <span key={otherLang}>
                 {" | "}
-                <a href={`index-${otherLang}.html`}>
+                <a href={`${pathPrefix}index-${otherLang}.html`}>
                   {otherLang === "de" ? "German version" : "English version"}
                 </a>
               </span>
