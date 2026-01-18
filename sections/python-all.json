@@ -4,7 +4,16 @@
     "en": "Python",
     "de": "Python"
   },
-  "childUrls": ["./python-8day-course/index-topic.json"],
+  "childUrls": [
+    "./python-8day-course/01-day1-foundations/index-topic.json",
+    "./python-8day-course/02-day2-operators-strings/index-topic.json",
+    "./python-8day-course/03-day3-lists-tuples/index-topic.json",
+    "./python-8day-course/04-day4-dicts-sets/index-topic.json",
+    "./python-8day-course/05-day5-control-functions/index-topic.json",
+    "./python-8day-course/06-day6-modules-advanced/index-topic.json",
+    "./python-8day-course/07-day7-errors-files/index-topic.json",
+    "./python-8day-course/08-day8-oop-next-steps/index-topic.json"
+  ],
   "languages": ["en"],
   "pageUrls": {
     "en": "./python-all-page-en.md"

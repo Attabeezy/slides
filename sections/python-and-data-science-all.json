@@ -5,7 +5,6 @@
     "de": "Python und Data Science"
   },
   "childUrls": [
-    "./python-8day-course/index-topic.json",
     "./python-data-science-0-overview/index-topic.json",
     "./python-data-science-1-numpy/index-topic.json",
     "./python-data-science-2-pandas/index-topic.json",
