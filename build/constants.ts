@@ -20,10 +20,9 @@ const PAGE_MARKER = "page";
 
 /**
  * url where the deployment will be hosted
- * - "docs" for local testing
- * - "slides" for deployment on marko-knoebl.github.io/slides
+ * - Use empty string for relative paths (works for both local and GitHub Pages)
  */
-const BASE_URL = "/slides";
+const BASE_URL = "";
 
 export {
   BASE_URL,

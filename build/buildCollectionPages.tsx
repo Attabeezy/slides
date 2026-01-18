@@ -77,22 +77,22 @@ function CollectionOverviewPage(props: {
       <div style={{ padding: "1rem" }}>
         <nav>
           <a href={`index-${props.lang}.html`}>Home</a>
-          {props.collection.languages.filter(l => l !== props.lang).map(otherLang => (
-            <span key={otherLang}>
-              {' | '}
-              <a href={`index-${otherLang}.html`}>
-                {otherLang === 'de' ? 'German version' : 'English version'}
-              </a>
-            </span>
-          ))}
+          {props.collection.languages
+            .filter((l) => l !== props.lang)
+            .map((otherLang) => (
+              <span key={otherLang}>
+                {" | "}
+                <a href={`index-${otherLang}.html`}>
+                  {otherLang === "de" ? "German version" : "English version"}
+                </a>
+              </span>
+            ))}
         </nav>
         <h1>{props.collection.titles[props.lang]}</h1>
         {props.collection.parent ? (
           <p>
             parent topic:{" "}
-            <a
-              href={`${BASE_URL}/${props.collection.parent.relId}-${props.lang}.html`}
-            >
+            <a href={`${props.collection.parent.relId}-${props.lang}.html`}>
               {props.collection.parent.titles[props.lang]}
             </a>
           </p>
@@ -170,9 +170,7 @@ function CollectionPage(props: {
             <>
               <div>
                 parent topic:{" "}
-                <a
-                  href={`${BASE_URL}/${props.collection.parent.relId}-${props.lang}.html`}
-                >
+                <a href={`${props.collection.parent.relId}-${props.lang}.html`}>
                   {props.collection.parent.titles[props.lang]}
                 </a>
               </div>
@@ -230,7 +228,7 @@ function getNavEntryForTopicPage(element: Topic, lang: string) {
           .filter((child) => child.language === lang)
           .map((child, index) => {
             const title = child.getTitle();
-            const url = `${BASE_URL}/${element.relId}-${lang}.html#/${index}`;
+            const url = `${element.relId}-${lang}.html#/${index}`;
             return (
               <li key={child.relSrcUrl}>
                 <a href={url} target="content">
@@ -305,15 +303,17 @@ function CollectionTopicsPage(props: { collection: Collection; lang: string }) {
     <HtmlPage lang={props.lang}>
       <div style={{ padding: "1rem" }}>
         <nav>
-          <a href={`/index-${props.lang}.html`}>Home</a>
-          {props.collection.languages.filter(l => l !== props.lang).map(otherLang => (
-            <span key={otherLang}>
-              {' | '}
-              <a href={`/index-${otherLang}.html`}>
-                {otherLang === 'de' ? 'German version' : 'English version'}
-              </a>
-            </span>
-          ))}
+          <a href={`index-${props.lang}.html`}>Home</a>
+          {props.collection.languages
+            .filter((l) => l !== props.lang)
+            .map((otherLang) => (
+              <span key={otherLang}>
+                {" | "}
+                <a href={`index-${otherLang}.html`}>
+                  {otherLang === "de" ? "German version" : "English version"}
+                </a>
+              </span>
+            ))}
         </nav>
         <ReactMarkdown>{props.collection.topicPages[props.lang]}</ReactMarkdown>
       </div>
@@ -329,15 +329,17 @@ function CollectionChecklistPage(props: {
     <HtmlPage lang={props.lang}>
       <div style={{ padding: "1rem" }}>
         <nav>
-          <a href={`/index-${props.lang}.html`}>Home</a>
-          {props.collection.languages.filter(l => l !== props.lang).map(otherLang => (
-            <span key={otherLang}>
-              {' | '}
-              <a href={`/index-${otherLang}.html`}>
-                {otherLang === 'de' ? 'German version' : 'English version'}
-              </a>
-            </span>
-          ))}
+          <a href={`index-${props.lang}.html`}>Home</a>
+          {props.collection.languages
+            .filter((l) => l !== props.lang)
+            .map((otherLang) => (
+              <span key={otherLang}>
+                {" | "}
+                <a href={`index-${otherLang}.html`}>
+                  {otherLang === "de" ? "German version" : "English version"}
+                </a>
+              </span>
+            ))}
         </nav>
         <ReactMarkdown>
           {props.collection.checklistPages[props.lang]}
