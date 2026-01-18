@@ -34,18 +34,23 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: "18"
       - name: Install dependencies
         run: npm ci
       - name: Build docs
         run: npm run build
+      - name: Verify .nojekyll file
+        run: |
+          ls -la docs/.nojekyll
+          echo "Contents of docs directory:"
+          ls -la docs/
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload docs directory
-          path: 'docs'
+          # Upload docs directory (includes .nojekyll to disable Jekyll)
+          path: "docs"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
