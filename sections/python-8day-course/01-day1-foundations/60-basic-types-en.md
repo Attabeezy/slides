@@ -96,7 +96,7 @@ coordinates = (10, 20)
 rgb = (255, 0, 128)
 ```
 
-### Dictionary (dict)
+## Dictionary (dict)
 
 Key-value pairs:
 

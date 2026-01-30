@@ -45,7 +45,7 @@ Comments are ignored by Python but help humans understand code.
 print("Hello")  # This is also a comment
 ```
 
-### Multi-Line Comments
+## Multi-Line Comments
 
 Use triple quotes (though technically this creates a string):
 
@@ -62,7 +62,7 @@ for multi-line comments.
 '''
 ```
 
-### When to Use Comments
+## When to Use Comments
 
 - Explain complex logic
 - Document function purposes

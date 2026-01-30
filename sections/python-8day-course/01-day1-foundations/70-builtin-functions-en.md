@@ -33,7 +33,7 @@ age = input("How old are you? ")
 print("You are", age, "years old")
 ```
 
-### Type Checking: type()
+## Type Checking: type()
 
 Check the data type of a value:
 

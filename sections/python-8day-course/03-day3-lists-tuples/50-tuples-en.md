@@ -44,7 +44,7 @@ print(type(single))      # <class 'tuple'>
 print(type(not_tuple))   # <class 'int'>
 ```
 
-### Tuple Packing
+## Tuple Packing
 
 ```python
 # Without parentheses (tuple packing)
@@ -181,7 +181,7 @@ print(a)  # 10
 print(b)  # 5
 ```
 
-### Unpacking with *
+## Unpacking with *
 
 ```python
 numbers = (1, 2, 3, 4, 5)
@@ -223,7 +223,7 @@ print(my_tuple)  # (1, 2, 3, 4, 5)
 print(type(my_tuple))  # <class 'tuple'>
 ```
 
-### Modifying Tuples Indirectly
+## Modifying Tuples Indirectly
 
 ```python
 # Convert to list, modify, convert back

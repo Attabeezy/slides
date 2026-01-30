@@ -32,7 +32,7 @@ sentence = "It's a beautiful day"
 sentence = 'It\'s a beautiful day'
 ```
 
-### Multi-Line Strings
+## Multi-Line Strings
 
 Use triple quotes for multi-line text:
 
@@ -117,7 +117,7 @@ print("She said, \"Hello!\"")  # She said, "Hello!"
 print('It\'s a nice day')      # It's a nice day
 ```
 
-### Raw Strings
+## Raw Strings
 
 Prefix with `r` to ignore escape sequences:
 

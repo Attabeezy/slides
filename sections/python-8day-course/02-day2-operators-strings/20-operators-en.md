@@ -72,7 +72,7 @@ print(2 ** 3)   # 8 (2 * 2 * 2)
 print(5 ** 2)   # 25
 ```
 
-### Practical Calculations
+## Practical Calculations
 
 ```python
 # Calculate circle area
@@ -154,7 +154,7 @@ print(not False)        # True
 print(not 3 > 2)        # False
 ```
 
-### Practical Examples
+## Practical Logical Examples
 
 ```python
 # Check if number is in range

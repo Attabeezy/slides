@@ -32,7 +32,7 @@ Python is widely used in:
 4. **Important:** Check "Add Python to PATH"
 5. Click "Install Now"
 
-### macOS
+## macOS
 
 Python 3 may already be installed. To check:
 

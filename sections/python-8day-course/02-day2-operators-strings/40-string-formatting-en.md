@@ -80,7 +80,7 @@ message = "{0} loves {1}. {0} is learning {1}!".format("Alice", "Python")
 print(message)  # Alice loves Python. Alice is learning Python!
 ```
 
-### Named Arguments
+## Named Arguments
 
 ```python
 message = "Hello, {name}! You are {age} years old".format(name="Charlie", age=35)
@@ -91,7 +91,7 @@ message = "{0}, your score is {score}".format("Dave", score=95)
 print(message)  # Dave, your score is 95
 ```
 
-### Formatting Numbers
+## Number Formatting
 
 ```python
 # Float precision
@@ -131,7 +131,7 @@ message = f"My name is {name}, I am {age} years old, and I live in {city}"
 print(message)  # My name is Emma, I am 28 years old, and I live in New York
 ```
 
-### Expressions Inside f-Strings
+## Expressions in f-Strings
 
 ```python
 a = 10
@@ -152,7 +152,7 @@ score = 85
 print(f"Result: {'Pass' if score >= 60 else 'Fail'}")  # Result: Pass
 ```
 
-### Formatting with f-Strings
+## Formatting with f-Strings
 
 ```python
 # Float precision

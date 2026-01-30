@@ -96,7 +96,7 @@ next_year_age = age + 1
 print(f"Next year you will be {next_year_age}")
 ```
 
-### Mixed Type Operations
+## Mixed Type Operations
 
 ```python
 # Concatenating numbers with strings

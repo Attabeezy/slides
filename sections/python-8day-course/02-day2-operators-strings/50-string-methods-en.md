@@ -18,7 +18,7 @@ print(text[-2])  # 'o'
 print(text[-6])  # 'P' (first character)
 ```
 
-### Slicing
+## Slicing
 
 Extract substrings using `[start:stop:step]`.
 

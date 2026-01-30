@@ -41,14 +41,14 @@ VS Code is a popular, free code editor with excellent Python support.
 2. Install the application
 3. Open VS Code
 
-### Python Extension
+## Python Extension
 
 1. Open VS Code
 2. Click the Extensions icon (or press Ctrl+Shift+X)
 3. Search for "Python"
 4. Install the official Python extension by Microsoft
 
-### Creating Your First Python File
+## Creating Your First Python File
 
 1. Create a new folder for your project
 2. Open the folder in VS Code (File → Open Folder)

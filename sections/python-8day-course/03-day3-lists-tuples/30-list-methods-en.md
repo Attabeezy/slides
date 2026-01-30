@@ -28,7 +28,7 @@ fruits.insert(0, 'grape')
 print(fruits)  # ['grape', 'apple', 'banana', 'orange']
 ```
 
-### extend() - Add Multiple Items
+## extend() - Add Multiple Items
 
 ```python
 fruits = ['apple', 'banana']
@@ -72,7 +72,7 @@ print(first)   # 'apple'
 print(fruits)  # ['banana']
 ```
 
-### del - Delete Items by Index or Slice
+## del - Delete Items by Index or Slice
 
 ```python
 fruits = ['apple', 'banana', 'orange', 'grape']
@@ -128,7 +128,7 @@ print(numbers)         # [3, 1, 4, 1, 5] (unchanged)
 print(sorted_numbers)  # [1, 1, 3, 4, 5]
 ```
 
-### reverse() - Reverse List In-Place
+## reverse() - Reverse List In-Place
 
 ```python
 fruits = ['apple', 'banana', 'orange']
@@ -163,7 +163,7 @@ print(original)  # [1, 2, 3, 4, 5] (unchanged)
 print(copy1)     # [999, 2, 3, 4, 5]
 ```
 
-### Assignment vs Copy
+## Assignment vs Copy
 
 ```python
 # Assignment doesn't copy!
