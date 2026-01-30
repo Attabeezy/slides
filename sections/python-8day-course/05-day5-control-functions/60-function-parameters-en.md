@@ -36,7 +36,7 @@ def make_pizza(size, *toppings):
 make_pizza(12, "pepperoni", "mushrooms", "olives")
 ```
 
-## **kwargs - Variable Keyword Arguments
+# **kwargs and Combined Parameters
 
 ```python
 def build_profile(**info):

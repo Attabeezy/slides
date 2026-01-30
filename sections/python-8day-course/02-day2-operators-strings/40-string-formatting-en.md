@@ -49,7 +49,7 @@ print("Circle with radius %d has area %.2f" % (radius, area))
 # Circle with radius 5 has area 78.50
 ```
 
-## Method 2: .format() Method
+# String Formatting: .format() Method
 
 Introduced in Python 3, more flexible.
 
@@ -109,7 +109,7 @@ print("{:*^10}".format("Hi"))         # '****Hi****' (centered with padding)
 print("{:,}".format(1000000))         # 1,000,000 (thousands separator)
 ```
 
-## Method 3: f-Strings (Recommended)
+# f-Strings (Recommended)
 
 Introduced in Python 3.6, most readable and efficient.
 
@@ -187,7 +187,7 @@ Next year you'll be {age + 1}
 print(message)
 ```
 
-## Comparison
+# String Formatting Comparison
 
 ```python
 name = "John"

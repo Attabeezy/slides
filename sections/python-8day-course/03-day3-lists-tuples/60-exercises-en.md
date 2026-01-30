@@ -34,7 +34,7 @@
    - Try to change an item (observe the error)
    - Convert the tuple to a list, modify it, then convert back
 
-## Level 2: Intermediate Operations
+# Day 3 Exercises - Level 2
 
 1. **List Manipulation**
    - Create two lists: `list1 = [1, 2, 3]` and `list2 = [4, 5, 6]`
@@ -65,7 +65,7 @@
    - Unpack a tuple of 4 items into 4 variables
    - Try unpacking with `*rest` for remaining items
 
-## Level 3: Advanced Challenges
+# Day 3 Exercises - Level 3
 
 1. **Shopping List Manager**
    Create a program that:
@@ -154,7 +154,7 @@
     - Rotate left by 2 positions: `[3, 4, 5, 1, 2]`
     - Use slicing
 
-## Bonus Challenges
+# Day 3 Bonus Challenges
 
 1. **Fibonacci Sequence**
    - Generate the first 10 Fibonacci numbers in a list

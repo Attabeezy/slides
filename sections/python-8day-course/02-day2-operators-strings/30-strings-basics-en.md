@@ -50,7 +50,7 @@ Let's master it together!"""
 print(paragraph)
 ```
 
-## String Concatenation
+# String Concatenation
 
 Combine strings using the `+` operator.
 
@@ -81,7 +81,7 @@ separator = "-" * 50
 print(separator)
 ```
 
-## Escape Sequences
+# Escape Sequences
 
 Special characters in strings.
 
@@ -132,7 +132,7 @@ path2 = r"C:\new\test"
 print(path2)  # C:\new\test
 ```
 
-## String Length
+# String Length and Checking
 
 Use `len()` to get string length:
 

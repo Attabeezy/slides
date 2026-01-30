@@ -34,7 +34,7 @@ print(int(False))       # 0
 int(float("3.14"))  # 3
 ```
 
-### Converting to Float: float()
+# Converting to Float and String
 
 ```python
 # Int to float
@@ -66,7 +66,7 @@ print(str(True))        # "True"
 print(str([1, 2, 3]))   # "[1, 2, 3]"
 ```
 
-### Converting to Boolean: bool()
+# Converting to Boolean: bool()
 
 ```python
 # Numbers to boolean
@@ -84,7 +84,7 @@ print(bool([1, 2]))     # True
 print(bool(None))       # False
 ```
 
-## Practical Examples
+# Practical Type Conversion Examples
 
 ### User Input Calculations
 

@@ -8,7 +8,7 @@
 4. Create a function that validates user input (age > 0)
 5. Use try-except-finally to ensure cleanup
 
-## Level 2: File Operations
+# Day 7 Exercises - Level 2
 
 1. Read a text file and print its contents
 2. Write a list of strings to a file
@@ -16,7 +16,7 @@
 4. Copy content from one file to another
 5. Append text to an existing file
 
-## Level 3: Advanced
+# Day 7 Exercises - Level 3
 
 1. Create a program to read/write JSON config files
 2. Parse CSV file and calculate averages
@@ -24,7 +24,7 @@
 4. Search for text patterns in files using regex
 5. Build a contact manager that saves to JSON
 
-## Solutions
+# Day 7 Solutions
 
 ### Level 1 Solutions
 
@@ -86,7 +86,7 @@ def process_file(filename):
             print("File closed")
 ```
 
-### Level 2 Solutions
+# Day 7 Level 2 Solutions
 
 ```python
 # 1. Read file
@@ -132,7 +132,7 @@ with open('log.txt', 'a') as file:
     file.write('New log entry\n')
 ```
 
-### Level 3 Solutions
+# Day 7 Level 3 Solutions
 
 ```python
 # 1. JSON config manager
@@ -268,7 +268,7 @@ manager.add_contact('Bob Jones', 'bob@example.com', '555-0002')
 manager.list_contacts()
 ```
 
-## Challenge: Log File Analyzer
+# Challenge: Log File Analyzer
 
 Create a program that:
 

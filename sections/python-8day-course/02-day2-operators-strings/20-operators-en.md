@@ -36,7 +36,7 @@ x %= 2   # x = x % 2  →  1.0
 x **= 3  # x = x ** 3 →  1.0
 ```
 
-## Arithmetic Operators
+# Arithmetic Operators
 
 Perform mathematical calculations.
 
@@ -93,7 +93,7 @@ fahrenheit = (celsius * 9/5) + 32
 print(f"{celsius}°C = {fahrenheit}°F")  # 25°C = 77.0°F
 ```
 
-## Comparison Operators
+# Comparison Operators
 
 Compare two values and return Boolean result.
 
@@ -125,7 +125,7 @@ print(len('hello') == 5)      # True
 print(len('python') > len('py'))  # True
 ```
 
-## Logical Operators
+# Logical Operators
 
 Combine conditional statements.
 
@@ -173,7 +173,7 @@ is_weekend = day == "Saturday" or day == "Sunday"
 print(is_weekend)  # True
 ```
 
-## Membership Operators
+# Membership and Identity Operators
 
 Check if a value exists in a sequence.
 

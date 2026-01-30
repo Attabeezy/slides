@@ -48,7 +48,7 @@ else:
     print("You are too young")
 ```
 
-## Short-hand (Ternary) Operator
+# Short-hand and Advanced Conditionals
 
 ```python
 age = 20

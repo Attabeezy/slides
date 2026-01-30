@@ -34,7 +34,7 @@ print("Five is greater than two")  # IndentationError!
 - Be consistent throughout your code
 - Don't mix tabs and spaces
 
-## Comments
+# Comments
 
 Comments are ignored by Python but help humans understand code.
 

@@ -47,7 +47,7 @@ print(text[::3])    # 'Ph ormn' (every 3rd character)
 print(text[::-1])   # 'gnimmargorP nohtyP'
 ```
 
-## Case Conversion Methods
+# Case Conversion Methods
 
 ```python
 text = "Python Programming"
@@ -88,7 +88,7 @@ print(text.count("is"))           # 2
 print(text.count("o"))            # 4
 ```
 
-## Testing Methods
+# Testing and Cleaning Methods
 
 ```python
 # Check string content
@@ -126,7 +126,7 @@ print("www.example.com".lstrip("w."))    # 'example.com'
 print("file.txt".rstrip(".txt"))         # 'file'
 ```
 
-## Modification Methods
+# Modification Methods
 
 ```python
 # replace() - replace substring

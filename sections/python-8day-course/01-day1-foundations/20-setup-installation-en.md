@@ -22,7 +22,7 @@ Python is widely used in:
 - Scientific computing
 - System administration
 
-## Installing Python
+# Installing Python
 
 ### Windows
 
@@ -59,7 +59,7 @@ sudo apt install python3
 sudo dnf install python3
 ```
 
-## Verifying Installation
+# Verifying Installation
 
 Open your terminal or command prompt and run:
 

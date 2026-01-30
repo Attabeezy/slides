@@ -70,7 +70,7 @@ print(fruits[-2])   # 'orange' (second to last)
 print(fruits[-4])   # 'apple' (first item)
 ```
 
-## Slicing Lists
+# Slicing Lists
 
 Extract portions of a list using `[start:stop:step]`.
 
@@ -95,7 +95,7 @@ print(numbers[-3:])     # [7, 8, 9]
 print(numbers[:-3])     # [0, 1, 2, 3, 4, 5, 6]
 ```
 
-## Modifying Lists
+# Modifying Lists
 
 Lists are mutable - you can change their contents.
 
@@ -131,7 +131,7 @@ if 'banana' in fruits:
     print("We have bananas!")
 ```
 
-## Unpacking Lists
+# Unpacking Lists
 
 Assign list items to variables.
 

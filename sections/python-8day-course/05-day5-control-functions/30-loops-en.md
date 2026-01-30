@@ -58,7 +58,7 @@ for i in range(5, 0, -1):
     print(i)  # 5, 4, 3, 2, 1
 ```
 
-## Enumerate
+# Enumerate and Zip
 
 ```python
 fruits = ['apple', 'banana', 'orange']

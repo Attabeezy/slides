@@ -34,7 +34,7 @@
    - Convert to Fahrenheit: `(celsius * 9/5) + 32`
    - Print: "30°C is X°F"
 
-## Level 2: Strings Basics
+# Day 2 Exercises - Level 2
 
 1. **String Creation**
    - Create a variable `company = "Coding For All"`
@@ -66,7 +66,7 @@
    - Use .format() to print the same message
    - Use % operator to print the same message
 
-## Level 3: Advanced
+# Day 2 Exercises - Level 3
 
 1. **Calculator Program**
    - Get two numbers from user input
@@ -136,7 +136,7 @@
      - Divisible by 4 AND (not divisible by 100 OR divisible by 400)
    - Test with years: 2000, 1900, 2024, 2023
 
-## Bonus Challenges
+# Day 2 Bonus Challenges
 
 1. **Acronym Generator**
    - Input: "Python For Everyone"

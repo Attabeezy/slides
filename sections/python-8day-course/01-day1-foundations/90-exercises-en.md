@@ -34,7 +34,7 @@
      - Your name (as a string)
      - Your country (as a string)
 
-## Level 2: Variables and Operations
+# Day 1 Exercises - Level 2
 
 1. **Create Variables**
    - Create a file named `day1.py` in VS Code
@@ -74,7 +74,7 @@
      - `exp = num_one ** num_two`
      - `floor_division = num_one // num_two`
 
-## Level 3: Advanced
+# Day 1 Exercises - Level 3
 
 1. **Circle Calculations**
    - Create variables:

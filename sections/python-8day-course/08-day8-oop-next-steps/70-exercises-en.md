@@ -8,7 +8,7 @@
 4. Create a `Temperature` class that converts between Celsius and Fahrenheit
 5. Create a `Counter` class with increment, decrement, and reset methods
 
-## Level 2: Inheritance and Advanced OOP
+# Day 8 Exercises - Level 2
 
 1. Create an `Animal` base class and `Dog`, `Cat` child classes with different `speak()` methods
 2. Create a `Vehicle` hierarchy: `Vehicle` -> `Car` -> `ElectricCar`
@@ -16,7 +16,7 @@
 4. Create a `Shape` hierarchy with `Rectangle`, `Circle`, and `Triangle`
 5. Build an `Employee` system with `Manager` and `Developer` subclasses
 
-## Level 3: Real-World Applications
+# Day 8 Exercises - Level 3
 
 1. Create a simple library management system with `Library`, `Book`, and `Member` classes
 2. Build a todo list application using OOP
@@ -24,9 +24,7 @@
 4. Create a contact manager that saves to JSON file
 5. Analyze a CSV file with Pandas and create visualizations
 
-## Solutions
-
-### Level 1 Solutions
+# Day 8 Solutions - Level 1
 
 ```python
 # 1. Book class
@@ -113,7 +111,7 @@ counter.reset()
 print(counter)  # Counter: 0
 ```
 
-### Level 2 Solutions
+# Day 8 Solutions - Level 2
 
 ```python
 # 1. Animal hierarchy
@@ -299,7 +297,7 @@ print(developer)
 print(f"Bonus: ${developer.get_bonus():.2f}")
 ```
 
-### Level 3 Solutions
+# Day 8 Solutions - Level 3
 
 ```python
 # 1. Library Management System
@@ -605,7 +603,7 @@ plt.savefig('analysis.png')
 print("\nVisualization saved to analysis.png")
 ```
 
-## Challenge: Complete Project
+# Challenge: Complete Project
 
 Build a **Student Management System** that:
 
