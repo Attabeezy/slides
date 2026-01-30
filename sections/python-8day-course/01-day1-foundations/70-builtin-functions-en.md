@@ -55,7 +55,7 @@ print(len([1, 2, 3, 4, 5]))  # 5
 print(len({'a': 1, 'b': 2})) # 2
 ```
 
-### Mathematical Functions
+# Mathematical Functions
 
 ```python
 # Absolute value
@@ -77,7 +77,7 @@ print(pow(2, 3))       # 8 (2^3)
 print(round(3.14159, 2))  # 3.14
 ```
 
-### Range: range()
+# Range and Help Functions
 
 Generate a sequence of numbers:
 

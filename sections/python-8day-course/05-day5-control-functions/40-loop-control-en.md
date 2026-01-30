@@ -64,7 +64,7 @@ if True:
     pass  # Do nothing
 ```
 
-## Nested Loops
+# Nested Loops
 
 ```python
 # Multiplication table

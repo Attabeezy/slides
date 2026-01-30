@@ -35,7 +35,7 @@ CONSTANT = 3.14
 # for = 5            # Cannot use reserved keywords
 ```
 
-## Naming Conventions
+# Naming Conventions
 
 ### Snake Case (Recommended)
 
@@ -58,7 +58,7 @@ PI = 3.14159
 MyClass = "example"
 ```
 
-## Assigning Values
+# Assigning Values
 
 ### Single Assignment
 

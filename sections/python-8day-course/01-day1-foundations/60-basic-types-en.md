@@ -35,7 +35,7 @@ z = 2 + 3j
 w = complex(1, 4)  # 1 + 4j
 ```
 
-## Text Type
+# Text Type
 
 ### String (str)
 
@@ -48,7 +48,7 @@ paragraph = """This is a
 multi-line string"""
 ```
 
-## Boolean Type
+# Boolean Type
 
 ### Boolean (bool)
 
@@ -73,7 +73,7 @@ result = None
 middle_name = None
 ```
 
-## Collection Types (Preview)
+# Collection Types (Preview)
 
 You'll learn these in detail later:
 

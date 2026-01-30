@@ -75,7 +75,7 @@ print(person.get('email'))   # None (no error)
 print(person.get('email', 'not provided'))  # 'not provided'
 ```
 
-## Modifying Dictionaries
+# Modifying Dictionaries
 
 ### Adding/Updating Items
 
@@ -141,7 +141,7 @@ print('email' in person)    # False
 print('Alice' in person.values())  # True
 ```
 
-## Looping Through Dictionaries
+# Looping Through Dictionaries
 
 ```python
 person = {'name': 'Alice', 'age': 25, 'city': 'Boston'}

@@ -53,7 +53,7 @@ lengths = [len(name) for name in names]
 print(lengths)  # [5, 3, 7]
 ```
 
-## With Conditions (Filtering)
+# List Comprehension with Conditions
 
 ### If Condition
 
@@ -102,7 +102,7 @@ first_letters = [word[0] for word in words]
 print(first_letters)  # ['a', 'b', 'o']
 ```
 
-## Nested Loops in Comprehension
+# Nested Loops and Practical Comprehensions
 
 ```python
 # Cartesian product

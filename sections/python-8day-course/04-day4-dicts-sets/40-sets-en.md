@@ -31,7 +31,7 @@ unique = set(numbers)
 print(unique)  # {1, 2, 3, 4, 5}
 ```
 
-## Set Operations
+# Set Operations
 
 ### Union (|)
 

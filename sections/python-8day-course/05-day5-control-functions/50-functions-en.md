@@ -79,7 +79,7 @@ def add(a, b):
 print(add.__doc__)  # Print documentation
 ```
 
-## Lambda Functions
+# Lambda Functions
 
 ```python
 # Regular function

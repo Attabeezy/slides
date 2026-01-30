@@ -31,7 +31,7 @@ I love Python
 # or press Ctrl+D (Linux/Mac) or Ctrl+Z then Enter (Windows)
 ```
 
-## Visual Studio Code
+# Visual Studio Code
 
 VS Code is a popular, free code editor with excellent Python support.
 
@@ -63,7 +63,7 @@ print("Hello, World!")
    - Right-click in the editor → "Run Python File in Terminal"
    - Or press F5 to debug
 
-## Python Files vs Shell
+# Python Files vs Shell
 
 | Python Shell | Python Files (.py) |
 |--------------|-------------------|

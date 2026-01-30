@@ -53,7 +53,7 @@ print(coordinates)  # (10, 20, 30)
 print(type(coordinates))  # <class 'tuple'>
 ```
 
-## Accessing Tuple Items
+# Accessing Tuple Items
 
 Tuples use indexing just like lists.
 
@@ -103,7 +103,7 @@ fruits = ('apple', 'banana', 'orange')
 # del fruits[0]             # TypeError!
 ```
 
-## Tuple Operations
+# Tuple Operations
 
 ### Concatenation
 
@@ -155,7 +155,7 @@ print(fruits.index('orange'))  # 2
 # print(fruits.index('grape'))  # ValueError!
 ```
 
-## Tuple Unpacking
+# Tuple Unpacking
 
 Assign tuple items to variables.
 
@@ -198,7 +198,7 @@ print(middle)  # [2, 3, 4]
 print(last)    # 5
 ```
 
-## Converting Between Lists and Tuples
+# Converting Between Lists and Tuples
 
 ### Tuple to List
 
@@ -262,7 +262,7 @@ joined = tuple1 + tuple2 + tuple3
 print(joined)  # (1, 2, 3, 4, 5, 6, 7, 8, 9)
 ```
 
-## Common Use Cases for Tuples
+# Common Use Cases for Tuples
 
 ### Function Return Values
 

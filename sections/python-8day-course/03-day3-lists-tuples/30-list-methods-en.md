@@ -43,7 +43,7 @@ fruits.extend('XY')  # Adds 'X' and 'Y' separately
 print(fruits)  # [..., 'kiwi', 'mango', 'X', 'Y']
 ```
 
-## Removing Items
+# Removing Items from Lists
 
 ### remove() - Remove First Occurrence of Value
 
@@ -100,7 +100,7 @@ print(fruits)  # []
 print(len(fruits))  # 0
 ```
 
-## Organizing Lists
+# Organizing Lists
 
 ### sort() - Sort List In-Place
 
@@ -141,7 +141,7 @@ reversed_fruits = fruits[::-1]
 print(reversed_fruits)  # ['orange', 'banana', 'apple']
 ```
 
-## Copying Lists
+# Copying Lists
 
 ### Shallow Copy Methods
 
